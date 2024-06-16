@@ -1,0 +1,94 @@
+/* Import Google Fonts - Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background: #e4e9f7;
+    transition: all .5s ease;
+}
+header{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+}
+header .logo{
+    float: left;
+    margin-left: 25px;
+    line-height: 80px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+header .logo a{
+    color: #333;
+    user-select: none;
+}
+header .logo a span{
+    color: #4070f4;
+    user-select: none;
+}
+header .navbar{
+    position: relative;
+}
+header .navbar ul{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    background: #fff;
+    border-radius: .5rem;
+    width: 180px;
+    padding: 2rem;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: all .5s ease;
+}
+header .navbar.show ul{
+    transform: scale(1.1);
+}
+header .navbar ul li{
+    line-height: 30px;
+    margin: 5px 0;
+    border-radius: .5rem;
+    transition: all .5s ease;
+}
+header .navbar ul li:hover{
+    background: #e4e9f7;
+}
+header .navbar ul a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    transition: all .5s ease;
+}
+header .navbar ul li:hover a{
+    padding-left: 15px;
+    color: #4070f4;
+}
+header .icons{
+    float: right;
+    margin-right: 30px;
+    line-height: 80px;
+}
+header .icons i{
+    font-size: 2.5rem;
+    color: #333;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+header .icons i:hover{
+    color: #4070f4;
+}
